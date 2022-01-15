@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping over an Array</title>
+</head>
+<body>
+    
+<h2>JavaScript For Of Loop</h2>
+<p>The for of statement loops through the values of any iterable object:</p>
+
+<p id="demo"></p>
+
+<h3>The For Of Loop</h3>
+
+<p>The For Of Loop
+    The JavaScript for of statement loops through the values of an iterable object.
+    
+    It lets you loop over iterable data structures such as Arrays, Strings, Maps, NodeLists, and more:
+    <br><br>
+    Syntax
+    <br>
+    for (variable of iterable) {
+      // code block to be executed
+    }
+    <br><br>
+    variable - For every iteration the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+    
+    iterable - An object that has iterable properties.</p>
+
+<script>
+    const cars = ["BMW", "Volvo", "Mini"];
+
+    let text = "";
+    for (let x of cars) {
+        text += x + "<br>"
+    }
+
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
