@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    
+<h2>JavaScript For Loop</h2>
+
+<!-- Instead of writing:
+text += cars[0] + "<br>";
+text += cars[1] + "<br>";
+text += cars[2] + "<br>";
+text += cars[3] + "<br>";
+text += cars[4] + "<br>";
+text += cars[5] + "<br>"; -->
+
+<p id="demo"></p>
+
+<script>
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+    let text = "";
+
+    /*The for loop has the following syntax:
+    for (statement 1; statement 2; statement 3) {
+    // code block to be executed
+    }
+    Statement 1 is executed (one time) before the execution of the code block.
+    Statement 2 defines the condition for executing the code block.
+    Statement 3 is executed (every time) after the code block has been executed.*/
+
+    for (let i = 0; i < cars.length; i++) {
+        text += cars[i] + "<br><br>";
+    }
+    
+    document.getElementById("demo").innerHTML = text;
+</script>
+    
+</body>
+</html>
